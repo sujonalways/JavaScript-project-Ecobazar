@@ -28,12 +28,11 @@
   --branding-error: #ea4b48;
   --primary-font: "Poppins", sans-serif;
 }
-body{
-
-    font-family: var(--primary-font);
+body {
+  font-family: var(--primary-font);
 }
 /* ========================== CSS Header ======================== */
-
+/* first */
 #first_header {
   box-shadow: 0 1px 0 0 #e5e5e5;
   background: var(--gray-scale-gray--800);
@@ -48,35 +47,103 @@ body{
 }
 
 #first_header .header-dropdown {
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    padding-right:20px ;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding-right: 20px;
 }
 #first_header .header_a {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    padding-left:20px ;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 20px;
 }
 
-#first_header .header-dropdown select{
-font-weight: 400;
-font-size: 12px;
-line-height: 130%;
-text-align: center;
-color: var(--gray-scale-gray--300);
-background: transparent;
-border: none;
-cursor: pointer;
+#first_header .header-dropdown select {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--gray-scale-gray--300);
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
-#first_header .header_devider{
-   
-    font-size: 14px;
-    color: var(--gray-scale-gray--300);
+#first_header .header_devider {
+  font-size: 14px;
+  color: var(--gray-scale-gray--300);
 }
-#first_header .header_a a{
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 130%;
-color: var(--gray-scale-gray--300);
-text-decoration: none;
+#first_header .header_a a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--gray-scale-gray--300);
+  text-decoration: none;
+}
+/* second */
+#second_header .logo-section span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 119%;
+  letter-spacing: -0.03em;
+  color: var(--gren-gray-scale-900);
+  padding-left: 10px;
+}
+#second_header form {
+  position: relative;
+  display: flex;
+}
 
+#second_header form span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+#second_header form input {
+  padding: 12px 44px;
+  outline: none;
+  border: 1px solid var(--gray-scale-gray--500);
+  display: inline-block;
+  width: 75%;
+  border-radius: 10px 0 0 10px;
+}
+#second_header form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  border: none;
+  background: var(--branding-success);
+  border-radius: 0 10px 10px 0;
+  width: 20%;
+  padding: 14px 24px;
+}
+#second_header .cards {
+  position: relative;
+}
+#second_header .cards small {
+  position: absolute;
+  right: 0;
+  border: 1px solid var(--gray-scale-white);
+  border-radius: 16px;
+  width: 18px;
+  height: 18px;
+  background: var(--branding-success-dark);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--gray-scale-white);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#second_header .bividar{
+    border-right:2px solid var(--gray-scale-gray--200) ;
+    padding-right: 15px;
+}
+#second_header .mobile-menu{
+  cursor: pointer;
 }
