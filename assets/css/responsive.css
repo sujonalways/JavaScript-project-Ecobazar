@@ -2,4 +2,7 @@
     #second_header{
         box-shadow: rgba(100, 100, 111, 0.115) 0px 7px 29px 0px;
     }
+    .offcanvas-menu{
+        width: 80% !important;
+    }
  }

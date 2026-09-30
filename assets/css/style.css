@@ -138,12 +138,88 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  
 }
-#second_header .bividar{
-    border-right:2px solid var(--gray-scale-gray--200) ;
-    padding-right: 15px;
+#second_header .bividar {
+  border-right: 2px solid var(--gray-scale-gray--200);
+  padding-right: 15px;
 }
-#second_header .mobile-menu{
+#second_header .mobile-menu {
   cursor: pointer;
+}
+/* Search Popup */
+.search_popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 140px;
+  left: 0;
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.search_popup.search_popup_active{
+  visibility: visible;
+  opacity: 1;
+
+}
+.search_popup .container {
+  background-color: var(--gray-scale-gray--50);
+  /* margin-top: 3%; */
+  overflow-y: auto;
+  height:  100%;
+  padding: 50px;
+}
+.search_popup .container .category_search_card {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.155) 0px 3px 8px;
+  padding: 20px;
+}
+.search_popup .container .category_search_card h3{
+  font-size: 18px;
+  color: var(--branding-success);
+}
+.search_popup .container .category_search_card p{
+  font-size: 12px;
+  color: var(--gray-scale-gray--900);
+  /* margin-bottom: 0; */
+}
+.search_popup .container .category_search_card a{
+  font-size: 15px;
+  color: var(--gray-scale-gray--100);
+  padding: 5px 10px;
+  margin-top: 10px;
+
+  text-decoration: none;
+  background: var(--branding-success-dark);
+}
+.search_popup h4{
+  color: var(--branding-success);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.search_popup ul li{
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+
+}
+.search_popup .search_close{
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--branding-success);
+  color: var(--gray-scale-gray--50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+.search_popup .search_close:hover{
+  border-radius: 30%;
+  background: var(--gray-scale-gray--50);
+  color: var(--branding-success);
 }
