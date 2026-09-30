@@ -158,16 +158,15 @@ body {
   transition: 0.5s ease;
   opacity: 0;
 }
-.search_popup.search_popup_active{
+.search_popup.search_popup_active {
   visibility: visible;
   opacity: 1;
-
 }
 .search_popup .container {
   background-color: var(--gray-scale-gray--50);
   /* margin-top: 3%; */
   overflow-y: auto;
-  height:  100%;
+  height: 100%;
   padding: 50px;
 }
 .search_popup .container .category_search_card {
@@ -175,16 +174,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.155) 0px 3px 8px;
   padding: 20px;
 }
-.search_popup .container .category_search_card h3{
+.search_popup .container .category_search_card h3 {
   font-size: 18px;
   color: var(--branding-success);
 }
-.search_popup .container .category_search_card p{
+.search_popup .container .category_search_card p {
   font-size: 12px;
   color: var(--gray-scale-gray--900);
   /* margin-bottom: 0; */
 }
-.search_popup .container .category_search_card a{
+.search_popup .container .category_search_card a {
   font-size: 15px;
   color: var(--gray-scale-gray--100);
   padding: 5px 10px;
@@ -193,18 +192,17 @@ body {
   text-decoration: none;
   background: var(--branding-success-dark);
 }
-.search_popup h4{
+.search_popup h4 {
   color: var(--branding-success);
   font-size: 20px;
   margin-bottom: 20px;
 }
-.search_popup ul li{
+.search_popup ul li {
   font-size: 14px;
   line-height: 30px;
   cursor: pointer;
-
 }
-.search_popup .search_close{
+.search_popup .search_close {
   position: absolute;
   top: 0px;
   right: 30px;
@@ -218,8 +216,66 @@ body {
   font-size: 18px;
   transition: 0.5s ease;
 }
-.search_popup .search_close:hover{
+.search_popup .search_close:hover {
   border-radius: 30%;
   background: var(--gray-scale-gray--50);
   color: var(--branding-success);
+}
+/* navbar dropdown */
+#nav .nav_bar_dropdown button {
+  border: none;
+  background: var(--branding-success);
+  border-radius: 0;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  padding: 17px 50px;
+}
+#nav .nav_bar_dropdown button::after {
+  display: none;
+}
+#nav .nav_bar_dropdown_show.show {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#nav .nav_menu_dropdown a {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--500);
+}
+#nav .dropdown-toggle::after {
+  display: none;
+}
+#nav .nav_menu_dropdown_show.show {
+  border: 0;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 20px;
+}
+#nav .nav_menu_dropdown_show a{
+    color: var(--gray-scale-gray--900);
+    margin: 5px 0;
+    
+  }
+  #nav a{
+    color: var(--gray-scale-gray--500);
+  }
+#nav .phone_number a{
+  font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+text-decoration: none;
+}
+#nav {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 0;
 }

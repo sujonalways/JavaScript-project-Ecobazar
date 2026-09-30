@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- ========================= Header START ====================== -->
+    <!-- ======================= Header START ==================== -->
     <header>
         <!-- first -->
         <div id="first_header" class="d-none d-lg-block">
@@ -146,81 +146,249 @@
             </div>
         </div>
         <!-- offcanvas end-->
-    </header>
-    <!-- ========================= Header END ======================== -->
 
-    <!-- search popup -->
-    <section class="search_popup">
-        <div class="container">
-            <div class="row">
-                <!-- categories -->
-                <div class="col-lg-3">
-                    <h4>Trending Search</h4>
-                    <ul>
-                        <li>Green Apple</li>
-                        <li>Surjapur Mango</li>
-                        <li>Red Tomatos</li>
-                        <li>Fresh Cauliflower</li>
-                    </ul>
-                </div>
+        <!-- ===================== Header END ==================== -->
 
-                <!-- categories result -->
-                <div class="col-lg-9">
-                    <h4>Trending Products</h4>
-                    <div class="row g-3">
-                        <div class="col-lg-4  ">
-                            <div class="category_search_card">
-                                <div><img class="img-fluid" src="./assets/image/product/1.png" alt=""></div>
-                                <div>
-                                    <h3>Surjapur Mango</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.</p>
-                                    <a href="#">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4  ">
-                            <div class="category_search_card">
-                                <div><img class="img-fluid" src="./assets/image/product/2.png" alt=""></div>
-                                <div>
-                                    <h3>Red Tomatos</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.</p>
-                                    <a href="#">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4  ">
-                            <div class="category_search_card">
-                                <div><img class="img-fluid" src="./assets/image/product/3.png" alt=""></div>
-                                <div>
-                                    <h3>Fresh Cauliflower</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.</p>
-                                    <a href="#">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4  ">
-                            <div class="category_search_card">
-                                <div><img class="img-fluid" src="./assets/image/product/1.png" alt=""></div>
-                                <div>
-                                    <h3>Surjapur Mango</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.</p>
-                                    <a href="#">see more</a>
-                                </div>
-                            </div>
-                        </div>
-
+        <!-- search popup -->
+        <section class="search_popup">
+            <div class="container">
+                <div class="row">
+                    <!-- categories -->
+                    <div class="col-lg-3">
+                        <h4>Trending Search</h4>
+                        <ul>
+                            <li>Green Apple</li>
+                            <li>Surjapur Mango</li>
+                            <li>Red Tomatos</li>
+                            <li>Fresh Cauliflower</li>
+                        </ul>
                     </div>
-                    <!-- close button -->
+
+                    <!-- categories result -->
+                    <div class="col-lg-9">
+                        <h4>Trending Products</h4>
+                        <div class="row g-3">
+                            <div class="col-lg-4  ">
+                                <div class="category_search_card">
+                                    <div><img class="img-fluid" src="./assets/image/product/1.png" alt=""></div>
+                                    <div>
+                                        <h3>Surjapur Mango</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.
+                                        </p>
+                                        <a href="#">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4  ">
+                                <div class="category_search_card">
+                                    <div><img class="img-fluid" src="./assets/image/product/2.png" alt=""></div>
+                                    <div>
+                                        <h3>Red Tomatos</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.
+                                        </p>
+                                        <a href="#">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4  ">
+                                <div class="category_search_card">
+                                    <div><img class="img-fluid" src="./assets/image/product/3.png" alt=""></div>
+                                    <div>
+                                        <h3>Fresh Cauliflower</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.
+                                        </p>
+                                        <a href="#">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4  ">
+                                <div class="category_search_card">
+                                    <div><img class="img-fluid" src="./assets/image/product/1.png" alt=""></div>
+                                    <div>
+                                        <h3>Surjapur Mango</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.
+                                        </p>
+                                        <a href="#">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- close button -->
+                    </div>
+                </div>
+                <div class="search_close">
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
-            <div class="search_close">
-              <i class="fas fa-times"></i>
-            </div>
-        </div>
-    </section>
-    <!-- search popup end -->
+        </section>
+        <!-- search popup end -->
 
+        <!-- navbar -->
+        <section id="nav">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
 
+                    <!-- dropdown -->
+                    <div class="dropdown nav_bar_dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12H21" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3 5H21" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3 19H21" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            All Categories
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 6.375L9 11.625L14.25 6.375" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu nav_bar_dropdown_show">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <!-- dropdown end -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mx-2 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <div class="dropdown nav_menu_dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                        <span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667"
+                                                    stroke="#808080" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+
+                                    <ul class="dropdown-menu nav_menu_dropdown_show">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown nav_menu_dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Shop
+                                        <span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667"
+                                                    stroke="#808080" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+
+                                    <ul class="dropdown-menu nav_menu_dropdown_show">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown nav_menu_dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                        <span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667"
+                                                    stroke="#808080" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+
+                                    <ul class="dropdown-menu nav_menu_dropdown_show">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown nav_menu_dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Blog
+                                        <span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667"
+                                                    stroke="#808080" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+
+                                    <ul class="dropdown-menu nav_menu_dropdown_show">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <div class="phone_number">
+                            <span>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.436 4.375C18.9194 4.77396 20.2719 5.55567 21.3581 6.64184C22.4442 7.72801 23.226 9.08051 23.6249 10.5639"
+                                        stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.5308 7.75687C17.4206 7.99625 18.2319 8.46521 18.8835 9.11678C19.535 9.76835 20.004 10.5797 20.2434 11.4695"
+                                        stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M10.115 13.6517C11.0224 15.5074 12.5263 17.0049 14.3859 17.9042C14.522 17.9688 14.6727 17.9966 14.8229 17.9851C14.9731 17.9736 15.1178 17.9231 15.2425 17.8386L17.9812 16.0134C18.1022 15.9326 18.2414 15.8833 18.3862 15.8698C18.5311 15.8564 18.677 15.8793 18.8107 15.9364L23.9339 18.1326C24.1079 18.2065 24.2532 18.335 24.3479 18.4987C24.4426 18.6623 24.4815 18.8523 24.4589 19.04C24.2967 20.307 23.6784 21.4714 22.7196 22.3154C21.7608 23.1593 20.5273 23.6249 19.25 23.625C15.3049 23.625 11.5214 22.0578 8.73179 19.2682C5.94218 16.4786 4.375 12.6951 4.375 8.75C4.37512 7.47279 4.84074 6.23941 5.68471 5.28077C6.52867 4.32213 7.6931 3.70396 8.96 3.542C9.14771 3.51936 9.33769 3.55832 9.50134 3.653C9.66499 3.74769 9.79345 3.89298 9.86738 4.067L12.0654 9.1945C12.1219 9.32698 12.1449 9.47137 12.1322 9.61485C12.1195 9.75833 12.0716 9.89647 11.9928 10.017L10.1728 12.7977C10.0901 12.923 10.0414 13.0675 10.0313 13.2171C10.0212 13.3668 10.05 13.5165 10.115 13.6517V13.6517Z"
+                                        stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <a href="tel:555-0114">(219) 555-0114</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- navbar end -->
+    </header>
 
 
     <script src="./assets/js/bootstrap.bundle.min copy.js"></script>
