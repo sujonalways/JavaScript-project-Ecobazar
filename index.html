@@ -9,6 +9,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -135,14 +136,132 @@
         <!-- second end -->
 
         <!-- offcanvas -->
-        <div class="offcanvas offcanvas-menu offcanvas-start" data-bs-scroll="true" tabindex="-1"
+        <div class="offcanvas offcanvas-menu offcanvas_menus offcanvas-start" data-bs-scroll="true" tabindex="-1"
             id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <!-- mobile logo -->
+                <img src="./assets/image/Logo1.png" alt="">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body ">
-                <p>Try scrolling the rest of the page to see this option in action.</p>
+            <!-- mobile menu -->
+            <div class="offcanvas-body">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link nav_categories active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">All Categories</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link nav_menu" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Menu</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">..11.
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <!-- mobile menu list -->
+                        <!-- Default dropend button -->
+                        <div class="mobile-list-menu">
+                            <div class="btn-group dropend modile_menu_list">
+                                <button type="button" class="menu_button btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667" stroke="#808080"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+
+                                </ul>
+                            </div>
+                            <div class="btn-group dropend modile_menu_list">
+                                <button type="button" class="menu_button btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667" stroke="#808080"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+
+                                </ul>
+                            </div>
+                            <div class="btn-group dropend modile_menu_list">
+                                <button type="button" class="menu_button btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667" stroke="#808080"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+
+                                </ul>
+                            </div>
+                            <div class="btn-group dropend modile_menu_list">
+                                <button type="button" class="menu_button btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33317 5.66667L7.99984 10.3333L12.6665 5.66667" stroke="#808080"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+
+                                </ul>
+                            </div>
+                            <div>
+
+                                <a href="#">About Us</a>
+                                <a href="#">Contact Us</a>
+                            </div>
+
+
+                        </div>
+                        <!-- mobile menu list end -->
+
+
+                    </div>
+
+                </div>
             </div>
         </div>
         <!-- offcanvas end-->
@@ -226,7 +345,7 @@
 
         <!-- navbar -->
         <section id="nav">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg p-0 ">
                 <div class="container">
 
                     <!-- dropdown -->
@@ -356,10 +475,10 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                               <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="#">About Us</a>
                             </li>
                             <li class="nav-item">
-                               <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
 
                         </ul>
@@ -389,10 +508,72 @@
         </section>
         <!-- navbar end -->
     </header>
-
-
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="sliders">
+                    <div class="slider">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img class="img-fluid" src="./assets/image/hero-img/1.png" alt="Fresh Food">
+                            </div>
+                            <div class="col-lg-6">
+                                <h4>Welcome To Shope</h4>
+                                <h2>Fresh & Healthy
+                                    Organic Food</h2>
+                                <p>Free shipping on all your order. we deliver, you enjoy</p>
+                                <a href="#">Shop now
+                                    <span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img class="img-fluid" src="./assets/image/hero-img/1.png" alt="Fresh Food">
+                            </div>
+                            <div class="col-lg-6">
+                                <h4>Welcome To Shope</h4>
+                                <h2>Fresh & Healthy
+                                    Organic Food</h2>
+                                <p>Free shipping on all your order. we deliver, you enjoy</p>
+                                <a href="#">Shop now
+                                    <span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img class="img-fluid" src="./assets/image/hero-img/1.png" alt="Fresh Food">
+                            </div>
+                            <div class="col-lg-6">
+                                <h4>Welcome To Shope</h4>
+                                <h2>Fresh & Healthy
+                                    Organic Food</h2>
+                                <p>Free shipping on all your order. we deliver, you enjoy</p>
+                                <a href="#">Shop now
+                                    <span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/jquery-git.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min copy.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
 </body>
 
 </html>
