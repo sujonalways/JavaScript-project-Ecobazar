@@ -279,6 +279,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   padding: 0;
 }
+/* ---------- hero ------------- */
+#hero {
+  padding: 60px 0 120px 0;
+}
 #hero .slider h4 {
   font-family: "Segoe Script", sans-serif;
   font-weight: 400;
@@ -380,3 +384,72 @@ body {
   height: 12px;
   background: var(--branding-success);
 }
+/* =================== Product START ======================  */
+
+#product {
+  background: var(--gren-gray-scale-50);
+}
+#product .service {
+  margin-top: -80px;
+  box-shadow: 0 0px 10px var(--gray-scale-gray--200);
+  border-radius: 8px;
+}
+#product .service .cards:first-child {
+  border-radius: 8px 0 0 8px;
+}
+#product .service .cards:last-child {
+  border-radius: 0 8px 8px 0;
+}
+#product .service .cards {
+  background: var(--gray-scale-white);
+  border: 1px solid var(--gray-scale-gray--200);
+  padding: 40px;
+  cursor: pointer;
+}
+
+#product .service img {
+  border: 1px solid var(--gray-scale-gray--200);
+  border-radius: 50%;
+}
+#product .service .cards.active {
+  background: var(--branding-success);
+}
+#product .service .cards.active p {
+  color: var(--gray-scale-white);
+}
+#product .service .cards.active h4 {
+  color: var(--gray-scale-white);
+}
+#product .service p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--400);
+}
+#product .service h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--900);
+  padding: 16px 0 8px 0;
+}
+
+/* item_menu */
+#product .item_menu {
+  display: flex;
+  justify-content: center;
+}
+#product .item_menu .heder h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-gray--900);
+  padding: 80px 0 26px 0;
+}
+
+
+/* =================== Product END ======================= */

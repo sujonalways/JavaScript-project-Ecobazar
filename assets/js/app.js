@@ -34,4 +34,13 @@ $(function () {
       },
     ],
   });
+
+  // product mixitup filter
+  mixitup("#Grid", {
+    // selectors: {
+    //    control: ".filter",
+    // },
+  });
+
+
 });
