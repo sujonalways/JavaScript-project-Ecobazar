@@ -890,7 +890,7 @@ ul li {
 /* =================== Video $ News END ======================= */
 
 /* =================== Sub Footer START ======================  */
-#sub_footer hr{
+#sub_footer hr {
   background: var(--gren-gray-scale-200);
   margin-bottom: 30px;
 }
@@ -898,42 +898,106 @@ ul li {
   justify-content: center;
   align-items: center;
 }
-#sub_footer .row .content h4{
+#sub_footer .row .content h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
   color: var(--gren-gray-scale-900);
 }
-#sub_footer .row .content p{
+#sub_footer .row .content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-400);
+}
+#sub_footer .row form {
+  border: 1px solid var(--gren-gray-scale-100);
+  border-radius: 46px;
+  padding-left: 24px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+#sub_footer .row form input {
+  border: none;
+  outline: none;
+}
+#sub_footer .row form button {
+  border: none;
+  outline: none;
+  border-radius: 43px;
+  padding: 16px 40px;
+  background: var(--branding-success);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--gray-scale-white);
+}
+/* =================== Sub Footer END ======================= */
+
+/* =================== Footer START ======================  */
+#footer {
+  background: var(--gren-gray-scale-900);
+  padding: 100px 0;
+  position: relative;
+}
+
+#footer .left_right_img .left{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+}
+#footer .left_right_img .right{
+  position: absolute;
+  width: 10%;
+  right: 0;
+  bottom: 0;
+}
+#footer .about_shopery h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--gray-scale-white);
+}
+#footer .about_shopery p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-500);
+  padding: 8px 0;
+}
+#footer .about_shopery a {
  font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+text-decoration: none;
+border-bottom: 1px solid var(--branding-success);
+}
+#footer .menus h5{
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+}
+#footer .menus ul{
+
+  list-style: none;
+  padding: 0;
+}
+#footer .menus li{
+font-family: "Poppins", sans-serif;
 font-weight: 400;
 font-size: 14px;
 line-height: 150%;
+padding: 6px 0;
 color: var(--gren-gray-scale-400);
 }
-#sub_footer .row form{
-  border: 1px solid var(--gren-gray-scale-100);
-border-radius: 46px;
-padding-left:24px ;
-display: inline-flex;
-justify-content: space-between;
-
-}
-#sub_footer .row form input{
-border: none;
-outline: none;
-}
-#sub_footer .row form button{
-border: none;
-outline: none;
-border-radius: 43px;
-padding: 16px 40px;
-background: var(--branding-success);
-font-family: "Poppins", sans-serif;
-font-weight: 600;
-font-size: 16px;
-line-height: 125%;
-color: var(--gray-scale-white);
-}
-/* =================== Sub Footer END ======================= */
+/* =================== Footer END ======================= */
