@@ -95,4 +95,67 @@
   #hero .slick-dots{
     margin-top: 20px;
   }
+  /* product */
+  #product .product_item ul li {
+    width: 50%;
+  }
+  #product .product_item .details{
+    padding: 10px;
+  }
+  #product #Grid{
+    padding: 0;
+  }
+  #product .heder ul li{
+    display: inline-flex;
+    padding: 5px;
+    
+  }
+  /* hot_items */
+#hot_items{
+  padding: 0 ;
+
 }
+
+/* featured_product */
+#featured_product {
+  padding: 10px;
+}
+#featured_product .cards {
+  width: 50%;
+}
+#featured_product h2{
+  padding: 20px;
+}
+/* customr review */
+#client{
+  padding: 50px 0 100px 0;
+}
+#client .customar_review{
+  width: 100%;
+}
+/* News video  */
+#news {
+  padding-top: 400px;
+}
+#news .video {
+  width: 100%;
+}
+#news .farm_video {
+   top: -100px;
+   width: 90%;
+  
+  
+}
+#news .new_product .content {
+  width: 98%;
+}
+/* sub_footer */
+#sub_footer .row {
+  gap: 10px;
+}
+#sub_footer .row form button{
+  padding: 16px 30px;
+}
+}
+
+

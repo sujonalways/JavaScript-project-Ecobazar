@@ -37,10 +37,22 @@ $(function () {
 
   // product mixitup filter
   mixitup("#Grid", {
-    // selectors: {
-    //    control: ".filter",
-    // },
+    selectors: {
+       control: ".filter",
+    },
+   
+
   });
 
 
 });
+// coundown
+
+// $(function () {
+//   var austDay = new Date();
+//   $('#defaultCountdown').countdown({until: austDay});
+//   austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 27);
+//   $('#year').text(austDay.getFullYear());
+// });
+
+
