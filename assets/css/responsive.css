@@ -82,80 +82,112 @@
   }
 
   /* hero slider */
-  
+
   #hero .slider {
-    text-align: center ;
+    text-align: center;
   }
-  #hero .slider h2{
+  #hero .slider h2 {
     font-size: 36px;
   }
-  #hero .slider p{
+  #hero .slider p {
     margin-bottom: 20px;
   }
-  #hero .slick-dots{
+  #hero .slick-dots {
     margin-top: 20px;
   }
   /* product */
   #product .product_item ul li {
     width: 50%;
   }
-  #product .product_item .details{
+  #product .product_item .details {
     padding: 10px;
   }
-  #product #Grid{
+  #product #Grid {
     padding: 0;
   }
-  #product .heder ul li{
+  #product .heder ul li {
     display: inline-flex;
     padding: 5px;
-    
   }
   /* hot_items */
-#hot_items{
-  padding: 0 ;
+  #hot_items {
+    padding: 0;
+  }
 
+  /* featured_product */
+  #featured_product {
+    padding: 10px;
+  }
+  #featured_product .cards {
+    width: 50%;
+  }
+  #featured_product h2 {
+    padding: 20px;
+  }
+  /* customr review */
+  #client {
+    padding: 50px 0 100px 0;
+  }
+  #client .customar_review {
+    width: 100%;
+  }
+  /* News video  */
+  #news {
+    padding-top: 400px;
+  }
+  #news .video {
+    width: 100%;
+  }
+  #news .farm_video {
+    top: -100px;
+    width: 90%;
+  }
+  #news .new_product .content {
+    width: 98%;
+  }
+  /* sub_footer */
+  #sub_footer .row {
+    gap: 10px;
+  }
+  #sub_footer .row form button {
+    padding: 16px 30px;
+  }
+  /* popup Add */
+  #addpopup .content .icon {
+  right: -8px;
+  top: -8px;
 }
-
-/* featured_product */
-#featured_product {
-  padding: 10px;
+#addpopup .row {
+  padding: 7px;
+  margin-left: 400px;
 }
-#featured_product .cards {
-  width: 50%;
+  #addpopup .row {
+    width: 100%;
+  }
+  #addpopup .content h4 {
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px 0;
+  }
+  #addpopup .content p {
+    font-size: 7px;
+    margin-bottom: 5px;
+  }
+  #addpopup .content form {
+    margin-left: 7px;
+    /* margin: 0 -50px; */
+  }
+  #addpopup .content form input {
+    font-size: 9px;
+    /* padding-left: 7px; */
+  }
+  #addpopup .content form button {
+    font-size: 9px;
+    padding: 5px 10px;
+    margin-top: 0px;
+  }
+  #addpopup .content .dont_show_box {
+    padding: 6px 0;
+    font-size: 10px;
+  }
 }
-#featured_product h2{
-  padding: 20px;
-}
-/* customr review */
-#client{
-  padding: 50px 0 100px 0;
-}
-#client .customar_review{
-  width: 100%;
-}
-/* News video  */
-#news {
-  padding-top: 400px;
-}
-#news .video {
-  width: 100%;
-}
-#news .farm_video {
-   top: -100px;
-   width: 90%;
-  
-  
-}
-#news .new_product .content {
-  width: 98%;
-}
-/* sub_footer */
-#sub_footer .row {
-  gap: 10px;
-}
-#sub_footer .row form button{
-  padding: 16px 30px;
-}
-}
-
-
