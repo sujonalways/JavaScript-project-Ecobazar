@@ -38,43 +38,70 @@ $(function () {
   // product mixitup filter
   mixitup("#Grid", {
     selectors: {
-       control: ".filter",
+      control: ".filter",
+    },
+  });
+  // footer_year
+
+  let footerYear = document.querySelector(".footer_year span");
+  const presentYear = new Date().getFullYear();
+
+  footerYear.innerHTML = presentYear;
+
+  // Newsletter_Popup
+
+  let addPopup = document.querySelector("#addpopup");
+  let popupIcon = document.querySelector(".content .icon");
+  // window.addEventListener("load" ,function(){
+  //   setTimeout(
+  //     function () {
+  //       addPopup.classList.add("addpopup_active")
+  //     }, 900
+  //   )
+  // })
+
+  popupIcon.addEventListener("click", function () {
+    addPopup.classList.remove("addpopup_active");
+  });
+
+  addPopup.addEventListener("click", function (e) {
+    console.log(e.target.classList);
+    if (e.target.classList.contains("container")) {
+      addPopup.classList.remove("addpopup_active");
+    }
+  });
+  // product item card
+
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".slider-nav",
+  });
+  $(".slider-nav").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    dots: false,
+    prevArrow: `<span class ="product_card_toparrow"><i class="fa-solid fa-chevron-up"></i></span>`,
+    nextArrow: `<span class="product_card_bottomparrow"><i class="fa-solid fa-angle-down"></i></span>`,
+    centerMode: false,
+    focusOnSelect: true,
+    vertical: true,
+     responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+         slidesToShow: 3,
+          vertical: false,
+          arrows: false,
+          
+      }
     },
    
-
+  ]
   });
-// footer_year
-
-let footerYear = document.querySelector(".footer_year span")
-const presentYear = new Date().getFullYear()
-
-footerYear.innerHTML = presentYear
-
-// Newsletter_Popup
-
-let addPopup = document.querySelector("#addpopup")
-let popupIcon = document.querySelector(".content .icon")
-window.addEventListener("load" ,function(){
-  setTimeout(
-    function () {
-      addPopup.classList.add("addpopup_active")
-    }, 900
-  )
-})
-
-popupIcon.addEventListener("click", function (){
-  addPopup.classList.remove("addpopup_active")
-})
-
-addPopup.addEventListener("click" , function (e) {
-  
-  console.log(e.target.classList);
-  if(e.target.classList.contains("container")){
-    addPopup.classList.remove("addpopup_active")
-
-  }
-})
-
 });
 // coundown
 
@@ -84,5 +111,3 @@ addPopup.addEventListener("click" , function (e) {
 //   austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 27);
 //   $('#year').text(austDay.getFullYear());
 // });
-
-
