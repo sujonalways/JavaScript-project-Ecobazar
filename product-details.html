@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Detils</title>
     <link rel="shortcut icon" href="./assets/image/fav.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -335,21 +337,21 @@
             </div>
         </section>
         <!-- search popup end -->
-         
+
         <!-- navbar -->
         <section id="nav">
             <nav class="navbar navbar-expand-lg p-0 ">
                 <div class="container">
 
-                    
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mx-2 mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul class="navbar-nav nav_dropdown_item me-auto mx-2 mb-2 mb-lg-0">
+                            <li class="nav-item ">
                                 <div class="dropdown nav_menu_dropdown">
                                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -470,10 +472,700 @@
             </nav>
         </section>
         <!-- navbar end -->
+        <section id="hero_nav">
+            <div class="container">
+                <div class="rows">
+                    <b><i class="fa-regular fa-house"></i></b>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <a href="./index.html">Category</a>
+
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <a href="./index.html#product">Vegetables</a>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <span>
+                        <a href="#">Chinese Cabbage</a>
+                    </span>
+
+                </div>
+            </div>
+        </section>
+        <!-- product item card -->
+        <section id="product-item-card">
+            <div class="container">
+                <div class="row">
+                    <!-- slick slider -->
+                    <div class="col-lg-6">
+                        <div class="row product_slider">
+                            <div class="col-lg-2 slider-nav slider_nav_item">
+                                <div><img class="img-fluid" src="./assets/image/product/12.png" alt=""></div>
+                                <div><img class="img-fluid" src="./assets/image/product/11.png" alt=""></div>
+                                <div><img class="img-fluid" src="./assets/image/product/12.png" alt=""></div>
+                                <div><img class="img-fluid" src="./assets/image/product/11.png" alt=""></div>
+                                <div><img class="img-fluid" src="./assets/image/product/12.png" alt=""></div>
+                                <div><img class="img-fluid" src="./assets/image/product/11.png" alt=""></div>
+                            </div>
+
+                            <div class="col-lg-10 slider-for">
+
+                                <div><img class="img-fluid example" src="./assets/image/product/12.png" alt=""></div>
+                                <div><img class="img-fluid example" src="./assets/image/product/11.png" alt=""></div>
+                                <div><img class="img-fluid example" src="./assets/image/product/12.png" alt=""></div>
+                                <div><img class="img-fluid example" src="./assets/image/product/11.png" alt=""></div>
+                                <div><img class="img-fluid example" src="./assets/image/product/12.png" alt=""></div>
+                                <div><img class="img-fluid example" src="./assets/image/product/11.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contents -->
+                    <div class="col-lg-6 contents">
+                        <h3 class="header_content">Chinese Cabbage <span>In Stock</span></h3>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex icons">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+
+                                <p> 4 Review</p>
+                            </div>
+                            <div class="d-flex code">
+                                <h5>SKU:</h5>
+                                <span>2,51,594</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center price">
+                            <h5>$48.00</h5>
+                            <h4>$17.28</h4>
+                            <span>64% Off</span>
+                        </div>
+                        <div class="brand_content">
+                            <div class="d-flex justify-content-between align-items-center brand">
+                                <h4>Brand: <img src="./assets/image/brand/1.png" alt=""></h4>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <h4>Share item:</h4>
+                                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                                    <span><i class="fa-brands fa-twitter"></i></span>
+                                    <span><i class="fa-brands fa-pinterest-p"></i></span>
+                                    <span><i class="fa-brands fa-instagram"></i></span>
+                                </div>
+
+                            </div>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius
+                                magna a consequat pulvinar. </p>
+                        </div>
+                        <div class="add_cart d-flex gap-lg-4 gap-2 align-items-center justify-content-center">
+                            <form action="" class="product_count">
+                                <button class="disincrease">-</button>
+                                <input type="number" value="1">
+                                <button class="increase">+</button>
+                            </form>
+                            <div>
+                                <h5>Add to Cart
+                                    <span>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.81706 6.48336H2.31706L0.650391 15.65H15.6504L13.9837 6.48336H11.4837M4.81706 6.48336V3.98336C4.81706 2.14241 6.30944 0.650024 8.15039 0.650024C9.99134 0.650024 11.4837 2.14241 11.4837 3.98336V6.48336M4.81706 6.48336H11.4837M4.81706 6.48336V8.98336M11.4837 6.48336V8.98336"
+                                                stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke="white" />
+                                        </svg>
+                                    </span>
+                                </h5>
+                            </div>
+                            <p class="product-cart-love">
+                                <i class="fa-regular fa-heart"></i>
+                            </p>
+
+                        </div>
+                        <div class="tag">
+                            <h4>Category: <span>Vegetables</span></h4>
+                            <h4>Tag: <span>Vegetables Healthy Chinese Cabbage Green Cabbage</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product item card end -->
+        <!-- product info -->
+        <section id="product-info">
+            <div class="container">
+                <!-- tap -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab2" data-bs-toggle="tab"
+                            data-bs-target="#nav-home2" type="button" role="tab" aria-controls="nav-home2"
+                            aria-selected="true">Descriptions</button>
+                        <button class="nav-link" id="nav-profile-tab2" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile2" type="button" role="tab" aria-controls="nav-profile2"
+                            aria-selected="false">Additional Information</button>
+                        <button class="nav-link" id="nav-contact-tab2" data-bs-toggle="tab"
+                            data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2"
+                            aria-selected="false">Customer Feedback</button>
+
+                    </div>
+                </nav>
+                <div class="row">
+
+                    <!-- content -->
+                    <div class="col-lg-6 first">
+                        <div class="tab-content" id="nav-tabContent2">
+                            <!-- 1st -->
+                            <div class="tab-pane show active" id="nav-home2" role="tabpanel"
+                                aria-labelledby="nav-home-tab2" tabindex="0">
+
+                                <div>
+                                    <p>
+                                        Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac,
+                                        viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas
+                                        auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel
+                                        dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam
+                                        mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam
+                                        scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo
+                                        quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam.
+                                        Phasellus nec fringilla elit. <br><br>
+                                        Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis,
+                                        metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque
+                                        tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-circle-check"></i></span>
+                                        100 g of fresh leaves provides.
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-circle-check"></i></span>
+                                        Aliquam ac est at augue volutpat elementum.
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-circle-check"></i></span>
+                                        Quisque nec enim eget sapien molestie.
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-circle-check"></i></span>
+                                        Proin convallis odio volutpat finibus posuere.
+                                    </p>
+                                    <p>
+                                        Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros
+                                        non turpis lobortis iaculis at ut massa.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2nd -->
+                            <div class="tab-pane" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2"
+                                tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-3">
+                                        <ul>
+                                            <li>Weight:</li>
+                                            <li>Color:</li>
+                                            <li>Type:</li>
+                                            <li>Category:</li>
+                                            <li>Stock Status:</li>
+                                            <li>Tags:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-7">
+                                        <ul class="detils">
+                                            <li>03</li>
+                                            <li>Green</li>
+                                            <li>Organic</li>
+                                            <li>Vegetables</li>
+                                            <li>Available (5,413)</li>
+                                            <li>Vegetables Healthy Chinese Cabbage Green Cabbage</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3rd -->
+                            <div class="tab-pane" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2"
+                                tabindex="0">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo rem adipisci
+                                    magni, doloremque cumque iste consectetur quae repellendus tempore quidem error ut
+                                    perspiciatis, laborum aliquam rerum, at sed maiores?.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- img -->
+                    <div class="col-lg-6 img">
+                        <div class="text-center">
+                            <img class="img-fluid" src="./assets/image/brand/2.png" alt="">
+                        </div>
+                        <div class="row ">
+                            <div class="col-6 discount">
+                                <div>
+                                    <img src="./assets/image/brand/3.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>64% Discount</h5>
+                                    <p>Save your 64% money with us</p>
+                                </div>
+                            </div>
+                            <div class="col-6 discount">
+                                <div>
+                                    <img src="./assets/image/brand/4.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>100% Organic</h5>
+                                    <p>100% Organic Vegetables</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tap end -->
+            </div>
+        </section>
+        <!-- product info end -->
+
+        <!-- Related Products -->
+        <section id="featured_product">
+            <div class="container">
+                <h2>Related Products</h2>
+                <div class="row">
+                    <div class="cards">
+                        <div class="img">
+                            <img class="img-fluid" src="./assets/image/product/3.png" alt="">
+                            <span class="love">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.39804 15.6254C-7.26829 6.41362 4.39837 -3.58638 9.39804 2.737C14.3984 -3.58638 26.065 6.41362 9.39804 15.6254Z"
+                                        stroke-width="1.5" stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                            <span class="eye">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                    <path
+                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="details d-flex justify-content-between">
+                            <div class="content">
+                                <h4>Green Apple</h4>
+                                <b>$14.99</b>
+                                <div>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                </div>
+                            </div>
+
+                            <div class="bag">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 10H5L3 21H21L19 10H16M8 10V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V10M8 10H16M8 10V13M16 10V13"
+                                            stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke="#002603" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="img">
+                            <img class="img-fluid" src="./assets/image/product/4.png" alt="">
+                            <span class="love">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.39804 15.6254C-7.26829 6.41362 4.39837 -3.58638 9.39804 2.737C14.3984 -3.58638 26.065 6.41362 9.39804 15.6254Z"
+                                        stroke-width="1.5" stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                            <span class="eye">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                    <path
+                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="details d-flex justify-content-between">
+                            <div class="content">
+                                <h4>Fresh Indian Malta</h4>
+                                <b>$20.99</b>
+                                <div>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                </div>
+                            </div>
+
+                            <div class="bag">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 10H5L3 21H21L19 10H16M8 10V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V10M8 10H16M8 10V13M16 10V13"
+                                            stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke="#002603" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="img">
+                            <img class="img-fluid" src="./assets/image/product/5.png" alt="">
+                            <span class="love">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.39804 15.6254C-7.26829 6.41362 4.39837 -3.58638 9.39804 2.737C14.3984 -3.58638 26.065 6.41362 9.39804 15.6254Z"
+                                        stroke-width="1.5" stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                            <span class="eye">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                    <path
+                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="details d-flex justify-content-between">
+                            <div class="content">
+                                <h4>Green Apple</h4>
+                                <b>$14.99</b>
+                                <div>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                </div>
+                            </div>
+
+                            <div class="bag">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 10H5L3 21H21L19 10H16M8 10V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V10M8 10H16M8 10V13M16 10V13"
+                                            stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke="#002603" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="img">
+                            <img class="img-fluid" src="./assets/image/product/7.png" alt="">
+                            <span class="love">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.39804 15.6254C-7.26829 6.41362 4.39837 -3.58638 9.39804 2.737C14.3984 -3.58638 26.065 6.41362 9.39804 15.6254Z"
+                                        stroke-width="1.5" stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                            <span class="eye">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                    <path
+                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="details d-flex justify-content-between">
+                            <div class="content">
+                                <h4>Green Lettuce</h4>
+                                <b>$9.99</b>
+                                <div>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                </div>
+                            </div>
+
+                            <div class="bag">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 10H5L3 21H21L19 10H16M8 10V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V10M8 10H16M8 10V13M16 10V13"
+                                            stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke="#002603" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="img">
+                            <img class="img-fluid" src="./assets/image/product/6.png" alt="">
+                            <span class="love">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.39804 15.6254C-7.26829 6.41362 4.39837 -3.58638 9.39804 2.737C14.3984 -3.58638 26.065 6.41362 9.39804 15.6254Z"
+                                        stroke-width="1.5" stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                            <span class="eye">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                    <path
+                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1A1A1A" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="details d-flex justify-content-between">
+                            <div class="content">
+                                <h4>Eggplant</h4>
+                                <b>$34.99</b>
+                                <div>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span class="active"><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                </div>
+                            </div>
+
+                            <div class="bag">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 10H5L3 21H21L19 10H16M8 10V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V10M8 10H16M8 10V13M16 10V13"
+                                            stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke="#002603" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Related Products end -->
+        <!-- ========================= Sub Footer START ====================== -->
+        <section id="sub_footer">
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img">
+                            <img src="./assets/image/Logo1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 content">
+                        <h4>Subcribe our Newsletter</h4>
+                        <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                    </div>
+                    <div class="col-lg-4 subscribe_section">
+                        <form action="#">
+                            <input type="text">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= Sub Footer END ======================== -->
+
     </header>
+    <!-- ========================== footer ======================== -->
+     
+    <footer>
+        <section id="footer" class="product_footer">
+            <div class="container">
+                <div class="left_right_img ">
+                    <img class="left " src="./assets/image/Left.png" alt="">
+                    <img class="right " src="./assets/image/Right.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-6 about_shopery">
+                        <h5>About Shopery</h5>
+                        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna
+                            congue nec.</p>
+                        <div class="d-flex gap-3 flex-wrap ">
+                            <a href="tel:555-0114">(219) 555-0114</a>
+                            <p class=" mb-2 pb-0">or</p>
+                            <a href="#">Proxy@gmail.com</a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-6 menus">
+                        <h5>My Account</h5>
+                        <ul>
+                            <li>My Account</li>
+                            <li>Order History</li>
+                            <li>Shoping Cart</li>
+                            <li>Wishlist</li>
+                            <li>Settings</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 menus">
+                        <h5>Helps </h5>
+                        <ul>
+                            <li>Contact</li>
+                            <li>Faqs</li>
+                            <li>Terms & Condition</li>
+                            <li>Privacy Policy</li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 menus">
+                        <h5>Proxy</h5>
+                        <ul>
+                            <li>About</li>
+                            <li>Shop</li>
+                            <li>Product</li>
+                            <li>Products Details</li>
+                            <li>Track Order</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 menus">
+                        <h5>Instagram </h5>
+                        <div class="d-flex gap-2">
+                            <img src="./assets/image/instagram-img/1.png" alt="">
+                            <img src="./assets/image/instagram-img/2.png" alt="">
+                            <img src="./assets/image/instagram-img/3.png" alt="">
+                            <img src="./assets/image/instagram-img/4.png" alt="">
+                        </div>
+                        <div class="d-flex gap-2 mt-2">
+                            <img src="./assets/image/instagram-img/5.png" alt="">
+                            <img src="./assets/image/instagram-img/6.png" alt="">
+                            <img src="./assets/image/instagram-img/7.png" alt="">
+                            <img class="z-1" src="./assets/image/instagram-img/8.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="icons">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest-p"></i>
+
+                            </a>
+                            <a href="#">
+
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="footer_year">
+                            Shopery eCommerce © <span> 2021</span> . All Rights Reserved
+
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icons payment">
+                            <a href="#">
+                                <img src="./assets/image/payment-img/6.png" alt="">
+                            </a>
+                            <a href="#">
+
+                                <img src="./assets/image/payment-img/7.png" alt="">
+
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="./assets/image/payment-img/8.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="./assets/image/payment-img/9.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="./assets/image/payment-img/10.png" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- ========================== footer end ======================== -->
     <script src="./assets/js/jquery-git.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min copy.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/zoomsl.min.js"></script>
+
     <!-- app js -->
     <script src="./assets/js/app.js"></script>
 </body>

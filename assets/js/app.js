@@ -52,13 +52,13 @@ $(function () {
 
   let addPopup = document.querySelector("#addpopup");
   let popupIcon = document.querySelector(".content .icon");
-  // window.addEventListener("load" ,function(){
-  //   setTimeout(
-  //     function () {
-  //       addPopup.classList.add("addpopup_active")
-  //     }, 900
-  //   )
-  // })
+  window.addEventListener("load" ,function(){
+    setTimeout(
+      function () {
+        addPopup.classList.add("addpopup_active")
+      }, 900
+    )
+  })
 
   popupIcon.addEventListener("click", function () {
     addPopup.classList.remove("addpopup_active");
@@ -71,43 +71,59 @@ $(function () {
     }
   });
   // product item card
-
-  $(".slider-for").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: ".slider-nav",
-  });
-  $(".slider-nav").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: ".slider-for",
-    dots: false,
-    prevArrow: `<span class ="product_card_toparrow"><i class="fa-solid fa-chevron-up"></i></span>`,
-    nextArrow: `<span class="product_card_bottomparrow"><i class="fa-solid fa-angle-down"></i></span>`,
-    centerMode: false,
-    focusOnSelect: true,
-    vertical: true,
-     responsive: [
+});
+$(".slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".slider-nav",
+});
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  vertical: true,
+  slidesToScroll: 1,
+  asNavFor: ".slider-for",
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  nextArrow: `<span class="product_details_downarrow"><i class="fa-solid fa-chevron-down"></i></span>`,
+  prevArrow: `<span class ="product_details_toparrow"><i class="fa-solid fa-chevron-up"></i></span>`,
+  responsive: [
     {
       breakpoint: 768,
       settings: {
-         slidesToShow: 3,
-          vertical: false,
-          arrows: false,
-          
-      }
+        vertical: false,
+        arrows: false,
+      },
     },
-   
-  ]
-  });
+  ],
 });
-// coundown
+// zoom
+$(function () {
+  $(".example").imagezoomsl();
+});
 
-// $(function () {
-//   var austDay = new Date();
-//   $('#defaultCountdown').countdown({until: austDay});
-//   austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 27);
-//   $('#year').text(austDay.getFullYear());
-// });
+let productDisincrease = document.querySelector(".product_count .disincrease");
+let productIncrease = document.querySelector(".product_count .increase");
+let productCountInput = document.querySelector(".product_count input");
+
+productIncrease.addEventListener("click", function (i) {
+  i.preventDefault();
+ 
+  if (productCountInput.value < 5) {
+    productCountInput.value++;
+  }
+});
+productDisincrease.addEventListener("click", function (i) {
+  i.preventDefault();
+  if (productCountInput.value > 0){
+    productCountInput.value--;
+
+  }
+});
+let product_cart_love = document.querySelector(".product-cart-love")
+
+product_cart_love.addEventListener("click" ,function () {
+  product_cart_love.innerHTML = `<i class="fa-solid fa-heart"></i>`
+})
