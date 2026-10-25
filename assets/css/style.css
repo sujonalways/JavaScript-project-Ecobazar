@@ -1628,7 +1628,10 @@ input::-webkit-inner-spin-button {
   padding: 24px;
 }
 #wishlist .row {
+
   border-bottom: 1px solid var(--gray-scale-gray--100);
+}
+#wishlist .row div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1741,3 +1744,58 @@ color: var(--gray-scale-gray--900);
 margin-bottom: 0;
 }
 /* =================== wishlist END ======================= */
+
+
+/* =================== Shopping cart START ======================  */
+/* Quantity */
+
+#wishlist  form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-scale-gray--100);
+  border-radius: 170px;
+  padding: 8px;
+  width: 124px;
+  height: 50px;
+}
+
+#wishlist  form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+#wishlist form input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+#wishlist  form button {
+  border: none;
+  outline: none;
+  background: var(--gray-scale-gray--50);
+  border-radius: 50%;
+  padding: 3px 10px;
+  font-size: 20px;
+}
+#wishlist  .card_items .last button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--gray-scale-gray--700);
+border-radius: 43px;
+padding: 14px 32px;
+background: var(--gray-scale-gray--50);
+border: none;
+outline: none;
+transition: 0.5s;
+}
+#wishlist  .card_items .last button:hover {
+  background: var(--gray-scale-gray--200);
+}
+/* Quantity end */
+/* =================== Shopping cart END ======================= */
+

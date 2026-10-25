@@ -52,13 +52,11 @@ $(function () {
 
   let addPopup = document.querySelector("#addpopup");
   let popupIcon = document.querySelector(".content .icon");
-  window.addEventListener("load" ,function(){
-    setTimeout(
-      function () {
-        addPopup.classList.add("addpopup_active")
-      }, 900
-    )
-  })
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      addPopup.classList.add("addpopup_active");
+    }, 900);
+  });
 
   popupIcon.addEventListener("click", function () {
     addPopup.classList.remove("addpopup_active");
@@ -110,20 +108,50 @@ let productCountInput = document.querySelector(".product_count input");
 
 productIncrease.addEventListener("click", function (i) {
   i.preventDefault();
- 
+
   if (productCountInput.value < 5) {
     productCountInput.value++;
   }
 });
 productDisincrease.addEventListener("click", function (i) {
   i.preventDefault();
-  if (productCountInput.value > 0){
+  if (productCountInput.value > 0) {
     productCountInput.value--;
-
   }
 });
-let product_cart_love = document.querySelector(".product-cart-love")
+let product_cart_love = document.querySelector(".product-cart-love");
 
-product_cart_love.addEventListener("click" ,function () {
-  product_cart_love.innerHTML = `<i class="fa-solid fa-heart"></i>`
-})
+// product_cart_love.addEventListener("click" ,function () {
+//   product_cart_love.innerHTML = `<i class="fa-solid fa-heart"></i>`
+// })
+
+// shopping cart one
+
+let capsicumPrice = document.querySelector(".capsicum_price");
+let shoppingCount = document.querySelector(".shopping_count input");
+let shoppingCountPlus = document.querySelector(".increase");
+let shoppingCountMainus = document.querySelector(
+  " .disincrease",
+);
+let shoppingTotalPrice = document.querySelector(".shopping_total_price");
+let shopping_close = document.querySelector(".shopping_close");
+
+shoppingCountPlus.addEventListener("click", function () {
+
+  total = Number(capsicumPrice.textContent) * shoppingCount.value;
+  shoppingTotalPrice.textContent = total;
+});
+
+shoppingCountMainus.addEventListener("click", function () {
+ 
+  totals = Number(shoppingTotalPrice.textContent)- Number(capsicumPrice.textContent);
+  shoppingTotalPrice.textContent = Number(totals).toFixed(2);
+  if (totals < Number(capsicumPrice.textContent)){
+    shoppingTotalPrice.textContent = 0
+  }
+});
+
+shopping_close.addEventListener("click", function () {
+  shoppingCount.value = 1;
+  shoppingTotalPrice.textContent = 14.99
+});
