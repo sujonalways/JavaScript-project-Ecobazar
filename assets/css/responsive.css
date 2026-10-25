@@ -242,4 +242,10 @@ display: none;
 }
   /* product-item-card end */
   /* =================== product details END ======================= */
+
+/* =================== Wish list START ======================  */
+#wishlist .row .four {
+  gap: 2px;
+}
+/* =================== Wish list END ======================= */
 }

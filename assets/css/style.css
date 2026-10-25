@@ -1608,3 +1608,136 @@ input::-webkit-inner-spin-button {
 }
 /* product footer end */
 /* =================== product details END ======================= */
+
+/* =================== wishlist START ======================  */
+#wishlist {
+  padding: 50px 0;
+}
+#wishlist h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-gray--900);
+  margin-bottom: 40px;
+}
+#wishlist .card_items {
+  border: 1px solid var(--gray-scale-gray--100);
+  border-radius: 8px;
+  padding: 24px;
+}
+#wishlist .row {
+  border-bottom: 1px solid var(--gray-scale-gray--100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wishlist .row p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--gray-scale-gray--500);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#wishlist .row .first {
+  padding: 10px 0;
+}
+#wishlist .row .first h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--900);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#wishlist .row .second h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--900);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#wishlist .row .thred h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--branding-success-dark);
+  border-radius: 4px;
+  padding: 4px 8px;
+  background: rgba(32, 181, 38, 0.2);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#wishlist .row .thred h5.stock_out {
+  color: var(--branding-error);
+  background: rgba(234, 75, 72, 0.2);
+}
+#wishlist .row .four button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  border-radius: 43px;
+  padding: 14px 32px;
+  background: var(--branding-success);
+  border: none;
+  transition: 0.5s;
+}
+#wishlist .row .four button:hover{
+  background: var(--branding-success-dark);
+}
+#wishlist .row .four {
+  padding: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 25px;
+  
+}
+#wishlist .row .four span{
+  /* margin-left: 20px; */
+  cursor: pointer;
+  
+}
+#wishlist .row .four button.stock_out{
+  background: var(--gray-scale-gray--50);
+  color: var(--gray-scale-gray--300);
+}
+#wishlist .wish_share {
+  padding-top:16px;
+  
+}
+#wishlist .wish_share span {
+  padding: 10px;
+  border: 1px solid var(--gray-scale-gray--100);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#wishlist .wish_share span:hover{
+ background: var(--branding-success);
+ color: var(--gray-scale-white);
+}
+#wishlist .wish_share h4{
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+margin-bottom: 0;
+}
+/* =================== wishlist END ======================= */
