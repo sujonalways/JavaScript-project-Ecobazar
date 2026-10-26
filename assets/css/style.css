@@ -574,7 +574,7 @@ ul li {
   padding: 40px;
 }
 #hot_items .content:last-child {
-  background-image: url(/assets/image/hot_items/3.png);
+  background-image: url(./assets/image/2.png);
 }
 #hot_items .content:last-child h2 {
   color: var(--gray-scale-gray--900);
