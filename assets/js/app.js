@@ -155,3 +155,12 @@ shopping_close.addEventListener("click", function () {
   shoppingCount.value = 1;
   shoppingTotalPrice.textContent = 14.99
 });
+shoppingCount.addEventListener("input", function () {
+  if ( shoppingCount.value > 5){
+    shoppingCount.value = 1;
+
+  }
+  total = Number(capsicumPrice.textContent) * shoppingCount.value;
+  shoppingTotalPrice.textContent = total;
+
+})
