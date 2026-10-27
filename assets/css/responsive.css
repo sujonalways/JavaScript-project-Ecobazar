@@ -96,6 +96,20 @@
     margin-top: 20px;
   }
   /* product */
+  #product .service .cards {
+    padding: 15px;
+   
+   
+  }
+  #product .service p {
+    text-align: center;
+    font-size: 12px;
+  }
+  #product .service h4 {
+    padding: 10px 0 0px 0;
+   text-align: center;
+   font-size: 16px;
+  }
   #product .product_item ul li {
     width: 50%;
   }
@@ -152,6 +166,16 @@
   #sub_footer .row form button {
     padding: 16px 30px;
   }
+  #footer {
+    padding-top: 50px;
+  }
+  #footer .menus {
+  margin-top: 15px;
+}
+#footer .about_shopery {
+  margin-top: 15px;
+
+}
   /* popup Add */
   #addpopup .content .icon {
   right: -8px;
@@ -175,7 +199,8 @@
   }
   #addpopup .content form {
     margin-left: 7px;
-    /* margin: 0 -50px; */
+    /* margin: 0 30px; */
+    
   }
   #addpopup .content form input {
     font-size: 9px;
@@ -208,6 +233,11 @@
   #hero_nav .rows span:last-child a{
     font-size: 12px;
   }
+  /* product-item-card magnifier */
+  .magnifier{
+    left: 2% !important;
+  }
+  /* product-item-card magnifier end */
   /* product-item-card */
   #product-item-card .contents .brand_content {
     padding: 15px 0;

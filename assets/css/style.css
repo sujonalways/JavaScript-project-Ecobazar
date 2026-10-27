@@ -391,11 +391,13 @@ ul li {
 
 #product {
   background: var(--gren-gray-scale-50);
+  padding: 10px 0;
 }
 #product .service {
-  margin-top: -80px;
+  margin-top: -100px;
   box-shadow: 0 0px 10px var(--gray-scale-gray--200);
   border-radius: 8px;
+  /* position: absolute; */
 }
 #product .service .cards:first-child {
   border-radius: 8px 0 0 8px;
@@ -408,6 +410,7 @@ ul li {
   border: 1px solid var(--gray-scale-gray--200);
   padding: 40px;
   cursor: pointer;
+  
 }
 
 #product .service img {
@@ -429,6 +432,7 @@ ul li {
   font-size: 14px;
   line-height: 150%;
   color: var(--gray-scale-gray--400);
+  margin: 0;
 }
 #product .service h4 {
   font-family: "Poppins", sans-serif;
@@ -436,7 +440,8 @@ ul li {
   font-size: 18px;
   line-height: 150%;
   color: var(--gray-scale-gray--900);
-  padding: 16px 0 8px 0;
+  padding: 16px 0;
+  margin: 0;
 }
 
 /* item_menu */
@@ -457,6 +462,7 @@ ul li {
   list-style: none;
   display: flex;
   gap: 10px;
+  padding: 0;
 }
 #product .heder ul li.mixitup-control-active {
   color: var(--branding-success);
@@ -574,7 +580,7 @@ ul li {
   padding: 40px;
 }
 #hot_items .content:last-child {
-  background-image: url(./assets/image/2.png);
+  background-image: url(/assets/image/hot_items/3.png);
 }
 #hot_items .content:last-child h2 {
   color: var(--gray-scale-gray--900);
@@ -930,6 +936,7 @@ ul li {
   padding-left: 24px;
   display: inline-flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 #sub_footer .row form input {
   border: none;
@@ -971,6 +978,7 @@ ul li {
   right: 0;
   bottom: 0;
 }
+
 #footer .about_shopery h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -995,6 +1003,7 @@ ul li {
   text-decoration: none;
   border-bottom: 1px solid var(--branding-success);
 }
+
 #footer .menus h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1130,7 +1139,7 @@ ul li {
   color: var(--branding-warning);
 }
 #addpopup .content form {
-  border: 1px solid var(--gray-scale-gray--100);
+  border: 2px solid var(--gray-scale-gray--100);
   border-radius: 46px;
   margin-left: 30px;
   display: inline-flex;
@@ -1157,7 +1166,7 @@ ul li {
 #addpopup .content form input {
   border: none;
   outline: none;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 #addpopup .content .dont_show_box {
   display: flex;
