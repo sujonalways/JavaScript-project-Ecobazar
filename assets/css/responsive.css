@@ -275,7 +275,8 @@ display: none;
 
 /* =================== Wish list START ======================  */
 #wishlist .row .four {
-  gap: 2px;
+  gap: 10px;
+  
 }
 /* =================== Wish list END ======================= */
 }

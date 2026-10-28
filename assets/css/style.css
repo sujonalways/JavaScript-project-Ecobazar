@@ -410,7 +410,6 @@ ul li {
   border: 1px solid var(--gray-scale-gray--200);
   padding: 40px;
   cursor: pointer;
-  
 }
 
 #product .service img {
@@ -574,13 +573,13 @@ ul li {
 #hot_items .content {
   width: 424px;
   height: 255px;
-  background-image: url(/assets/image/hot_items/1.png);
+  background-image: url(../image/hot_items/1.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px;
 }
 #hot_items .content:last-child {
-  background-image: url(/assets/image/hot_items/3.png);
+  background-image: url(../image/hot_items/3.png);
 }
 #hot_items .content:last-child h2 {
   color: var(--gray-scale-gray--900);
@@ -601,7 +600,7 @@ ul li {
   color: var(--gray-scale-gray--900);
 }
 #hot_items .content:nth-child(2) {
-  background-image: url(/assets/image/hot_items/2.png);
+  background-image: url(../image/hot_items/2.png);
   display: flex;
   justify-content: end;
 }
@@ -834,7 +833,7 @@ ul li {
   height: 440px;
   text-align: center;
   background: #000;
-  background-image: url(/assets/image/1.png);
+  background-image: url(../image/1.png);
   background-size: cover;
   display: inline-flex;
   flex-direction: column;
@@ -1232,7 +1231,7 @@ ul li {
 }
 /* hero_nav */
 #hero_nav {
-  background-image: url(/assets/image/hero-img/3.png);
+  background-image: url(../image/hero-img/3.png);
   /* background: linear-gradient(90.02deg, rgba(0, 0, 0, 0.7) 0.03%, rgba(0, 0, 0, 0) 91.31%); */
   background-size: cover;
   /* background-repeat: no-repeat; */
@@ -1637,7 +1636,6 @@ input::-webkit-inner-spin-button {
   padding: 24px;
 }
 #wishlist .row {
-
   border-bottom: 1px solid var(--gray-scale-gray--100);
 }
 #wishlist .row div {
@@ -1670,6 +1668,9 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
 }
+#wishlist .row .four h4 {
+  margin: 0;
+}
 #wishlist .row .second h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1678,6 +1679,7 @@ input::-webkit-inner-spin-button {
   color: var(--gray-scale-gray--900);
   display: inline-flex;
   justify-content: center;
+  
   align-items: center;
 }
 #wishlist .row .thred h5 {
@@ -1709,29 +1711,26 @@ input::-webkit-inner-spin-button {
   border: none;
   transition: 0.5s;
 }
-#wishlist .row .four button:hover{
+#wishlist .row .four button:hover {
   background: var(--branding-success-dark);
 }
 #wishlist .row .four {
   padding: 0;
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 25px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
-#wishlist .row .four span{
+#wishlist .row .four span {
   /* margin-left: 20px; */
   cursor: pointer;
-  
 }
-#wishlist .row .four button.stock_out{
+#wishlist .row .four button.stock_out {
   background: var(--gray-scale-gray--50);
   color: var(--gray-scale-gray--300);
 }
 #wishlist .wish_share {
-  padding-top:16px;
-  
+  padding-top: 16px;
 }
 #wishlist .wish_share span {
   padding: 10px;
@@ -1740,25 +1739,24 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   transition: 0.5s;
 }
-#wishlist .wish_share span:hover{
- background: var(--branding-success);
- color: var(--gray-scale-white);
+#wishlist .wish_share span:hover {
+  background: var(--branding-success);
+  color: var(--gray-scale-white);
 }
-#wishlist .wish_share h4{
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-color: var(--gray-scale-gray--900);
-margin-bottom: 0;
+#wishlist .wish_share h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--900);
+  margin-bottom: 0;
 }
 /* =================== wishlist END ======================= */
-
 
 /* =================== Shopping cart START ======================  */
 /* Quantity */
 
-#wishlist  form {
+#wishlist form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1769,7 +1767,7 @@ margin-bottom: 0;
   height: 50px;
 }
 
-#wishlist  form input::-webkit-outer-spin-button,
+#wishlist form input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
   -webkit-appearance: none;
@@ -1781,7 +1779,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   padding: 0;
 }
-#wishlist  form button {
+#wishlist form button {
   border: none;
   outline: none;
   background: var(--gray-scale-gray--50);
@@ -1789,22 +1787,68 @@ input::-webkit-inner-spin-button {
   padding: 3px 10px;
   font-size: 20px;
 }
-#wishlist  .card_items .last button {
+#wishlist .card_items .last button {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-font-size: 14px;
-line-height: 120%;
-color: var(--gray-scale-gray--700);
-border-radius: 43px;
-padding: 14px 32px;
-background: var(--gray-scale-gray--50);
-border: none;
-outline: none;
-transition: 0.5s;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--gray-scale-gray--700);
+  border-radius: 43px;
+  padding: 14px 32px;
+  background: var(--gray-scale-gray--50);
+  border: none;
+  outline: none;
+  transition: 0.5s;
 }
-#wishlist  .card_items .last button:hover {
+#wishlist .card_items .last button:hover {
   background: var(--gray-scale-gray--200);
+}
+#wishlist .content {
+  border: 1px solid var(--gray-scale-gray--100);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  
+}
+#wishlist .content h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--900);
+}
+#wishlist .content h5 {
+ font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--700);
+margin-top: 15px;
+}
+#wishlist .content p {
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+margin: 0;
+}
+#wishlist .content button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  border-radius: 43px;
+  padding: 16px 40px;
+  background: var(--branding-success);
+  border: 1px solid var(--branding-success);
+  outline: none;
+  transition: 0.5s;
+}
+#wishlist .content button:hover{
+  background: var(--gray-scale-white);
+  color: var(--branding-success);
 }
 /* Quantity end */
 /* =================== Shopping cart END ======================= */
-

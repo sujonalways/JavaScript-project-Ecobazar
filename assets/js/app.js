@@ -102,23 +102,6 @@ $(function () {
   $(".example").imagezoomsl();
 });
 
-let productDisincrease = document.querySelector(".product_count .disincrease");
-let productIncrease = document.querySelector(".product_count .increase");
-let productCountInput = document.querySelector(".product_count input");
-
-productIncrease.addEventListener("click", function (i) {
-  i.preventDefault();
-
-  if (productCountInput.value < 5) {
-    productCountInput.value++;
-  }
-});
-productDisincrease.addEventListener("click", function (i) {
-  i.preventDefault();
-  if (productCountInput.value > 0) {
-    productCountInput.value--;
-  }
-});
 let product_cart_love = document.querySelector(".product-cart-love");
 
 // product_cart_love.addEventListener("click" ,function () {
@@ -127,63 +110,43 @@ let product_cart_love = document.querySelector(".product-cart-love");
 
 // shopping cart one
 
-let capsicumPrice = document.querySelector(".capsicum_price");
-let shoppingCount = document.querySelector(".shopping_count ");
-let shoppingCountPlus = document.querySelector(".increase");
-let shoppingCountMainus = document.querySelector(
-  " .disincrease",
-);
-let shoppingTotalPrice = document.querySelector(".shopping_total_price");
-let shopping_close = document.querySelector(".shopping_close");
+let shoppingCount = document.querySelectorAll(".shopping_count");
 
+shoppingCount.forEach((el) => {
+  // form
+  const increaseBtn = el.querySelector(".increase");
+  const disincreaseBtn = el.querySelector(".disincrease");
+  const cardInput = el.querySelector("input");
+  // price
+  let capsicumPrice = el.querySelector(".capsicum_price");
+  let shoppingTotalPrice = el.querySelector(".shopping_total_price");
+  let shopping_close = el.querySelector(".shopping_close");
 
+  // increase button
+  increaseBtn.addEventListener("click", function () {
+    cardInput.value++;
+    if (cardInput.value > 5) {
+      cardInput.value = 5;
+    }
+    // price
+    total = Number(capsicumPrice.textContent) * cardInput.value
+    shoppingTotalPrice.innerHTML = total
+  });
 
+  // disincrease button
+  disincreaseBtn.addEventListener("click", function () {
+    cardInput.value--;
+    if (cardInput.value < 0) {
+      cardInput.value = 0;
+    }
+    // price
+    total = Number(capsicumPrice.textContent) * cardInput.value
+    shoppingTotalPrice.innerHTML = total
+  });
 
-
-
-
-console.log(shoppingCount);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// shoppingCountPlus.addEventListener("click", function () {
-
-//   total = Number(capsicumPrice.textContent) * shoppingCount.value;
-//   shoppingTotalPrice.textContent = total;
-// });
-
-// shoppingCountMainus.addEventListener("click", function () {
- 
-//   totals = Number(shoppingTotalPrice.textContent)- Number(capsicumPrice.textContent);
-//   shoppingTotalPrice.textContent = Number(totals).toFixed(2);
-//   if (totals < Number(capsicumPrice.textContent)){
-//     shoppingTotalPrice.textContent = 0
-//   }
-// });
-
-// shopping_close.addEventListener("click", function () {
-//   shoppingCount.value = 1;
-//   shoppingTotalPrice.textContent = 14.99
-// });
-// shoppingCount.addEventListener("input", function () {
-//   if ( shoppingCount.value > 5){
-//     shoppingCount.value = 1;
-
-//   }
-//   total = Number(capsicumPrice.textContent) * shoppingCount.value;
-//   shoppingTotalPrice.textContent = total;
-
-// })
+  // close
+  shopping_close.addEventListener("click",function () {
+    cardInput.value = 1
+    shoppingTotalPrice.textContent = capsicumPrice.textContent
+  })
+});
