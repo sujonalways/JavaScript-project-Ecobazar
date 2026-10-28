@@ -1852,3 +1852,9 @@ margin: 0;
 }
 /* Quantity end */
 /* =================== Shopping cart END ======================= */
+
+/* =================== shop nav START ======================  */
+#hero_nav.shop-nav{
+  background: var(--gray-scale-white);
+}
+/* =================== shop nav END ======================= */
