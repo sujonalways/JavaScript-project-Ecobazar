@@ -135,6 +135,10 @@
   #featured_product .cards {
     width: 50%;
   }
+  #featured_product .cards.product{
+    width: 50%;
+
+  }
   #featured_product h2 {
     padding: 20px;
   }
