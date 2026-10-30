@@ -97,7 +97,10 @@
   }
   /* product */
   #product .service .cards {
-    padding: 15px;
+    padding: 10px;
+   display: flex;
+   gap: 20px;
+    
    
    
   }
