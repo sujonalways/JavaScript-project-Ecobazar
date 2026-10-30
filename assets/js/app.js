@@ -150,3 +150,7 @@ shoppingCount.forEach((el) => {
     shoppingTotalPrice.textContent = capsicumPrice.textContent
   })
 });
+
+$(document).ready(function() {
+  generatePagination('.js-pagination', '.js-pagination-item', 1, '<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>');
+});
