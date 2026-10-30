@@ -160,7 +160,7 @@ ul li {
   visibility: hidden;
   transition: 0.5s ease;
   opacity: 0;
-  z-index: 2;
+  z-index: 5;
 }
 .search_popup.search_popup_active {
   visibility: visible;
@@ -1228,7 +1228,7 @@ ul li {
   text-decoration: none;
 }
 #nav .nav_dropdown_item a.active {
-color: var(--branding-success);
+  color: var(--branding-success);
 }
 #nav .nav_dropdown_item a:hover {
   color: var(--branding-success);
@@ -1236,12 +1236,10 @@ color: var(--branding-success);
 #nav .nav_dropdown_item a.active svg path {
   color: var(--branding-success);
   stroke: var(--branding-success);
-  
 }
 #nav .nav_dropdown_item a:hover svg path {
   color: var(--branding-success);
   stroke: var(--branding-success);
- 
 }
 /* hero_nav */
 #hero_nav {
@@ -1873,7 +1871,7 @@ input::-webkit-inner-spin-button {
 }
 /* product-filter */
 
-#product-filter a{
+#product-filter a {
   text-decoration: none;
 }
 #product-filter {
@@ -1999,3 +1997,39 @@ input::-webkit-inner-spin-button {
 }
 
 /* =================== pagination Btn END ======================= */
+
+/* =================== Error START ======================  */
+#error {
+  padding: 50px 0;
+}
+#error h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-gray--900);
+  margin-top: 10px;
+}
+#error p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gray-scale-gray--500);
+  margin: 25px 0;
+  
+}
+#error a {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--gray-scale-white);
+background: var(--branding-success);
+border-radius: 43px;
+text-decoration: none;
+padding: 14px 32px;
+}
+/* =================== Error END ======================= */
