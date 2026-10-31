@@ -285,5 +285,9 @@ display: none;
   gap: 10px;
   
 }
+#contact .contaci-info{
+  padding: 20px;
+  margin-top: 20px;
+}
 /* =================== Wish list END ======================= */
 }
